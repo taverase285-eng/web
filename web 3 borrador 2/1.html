@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La Gran Pulpería — Tradición Madrileña | Madrid</title>
+    <meta name="description" content="La Gran Pulpería — Cocina tradicional madrileña en un ambiente acogedor. Reserva por WhatsApp: +34 123 456 789">
+    <meta name="theme-color" content="#5c2c0e">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%235c2c0e'/><text x='50' y='58' font-size='40' font-family='Playfair Display, serif' font-weight='700' text-anchor='middle' fill='%23f8f1e5'>LGP</text></svg>">
+    
+    <!-- Social preview -->
+    <meta property="og:title" content="La Gran Pulpería — Tradición Madrileña">
+    <meta property="og:description" content="Cocina tradicional madrileña en un ambiente acogedor. Reserva ahora.">
+    <meta property="og:image" content="http://static.photos/food/1200x630/42">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f8f1e5',
+                            100: '#eedbc8',
+                            200: '#e1c3a7',
+                            300: '#d4ab85',
+                            400: '#c99463',
+                            500: '#bf7d41',
+                            600: '#9c6534',
+                            700: '#794e28',
+                            800: '#5c2c0e',
+                            900: '#3d1d09',
+                        },
+                        accent: {
+                            100: '#f0f7f4',
+                            200: '#cce3de',
+                            300: '#a8cfc8',
+                            400: '#84bbb2',
+                            500: '#60a79c',
+                            600: '#4d867e',
+                            700: '#3a6560',
+                            800: '#274442',
+                            900: '#142324',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Playfair Display', 'serif'],
+                        body: ['Raleway', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        'xl': '14px',
+                        '2xl': '20px',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-b from-primary-800 to-primary-900 text-primary-50 font-body">
+    <!-- Navbar -->
+    <custom-navbar></custom-navbar>
+    
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Hero Section -->
+        <section class="grid md:grid-cols-2 gap-8 mt-6 mb-16 items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-display font-bold mb-4 leading-tight">Sabores tradicionales de Madrid en La Gran Pulpería</h1>
+                <p class="text-primary-200 mb-8 text-lg">Desde 1985 sirviendo los auténticos platos madrileños en un ambiente cálido y familiar.</p>
+                
+                <div class="flex flex-wrap gap-4 mb-8">
+                    <a href="#reservas" class="bg-primary-600 hover:bg-primary-500 text-white px-6 py-3 rounded-xl font-semibold transition-all flex items-center gap-2">
+                        <i data-feather="calendar"></i> Reservar mesa
+                    </a>
+                    <a href="tel:+34123456789" class="border border-primary-400 hover:bg-primary-800 text-primary-100 px-6 py-3 rounded-xl font-medium transition-all flex items-center gap-2">
+                        <i data-feather="phone"></i> Llamar
+                    </a>
+                </div>
+                
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="bg-primary-700/30 backdrop-blur-sm p-4 rounded-xl border border-primary-600/20">
+                        <div class="text-primary-50 font-semibold">Abierto</div>
+                        <div class="text-sm text-primary-300">13:00-00:00</div>
+                    </div>
+                    <div class="bg-primary-700/30 backdrop-blur-sm p-4 rounded-xl border border-primary-600/20">
+                        <div class="text-primary-50 font-semibold">Ubicación</div>
+                        <div class="text-sm text-primary-300">Madrid Centro</div>
+                    </div>
+                    <div class="bg-primary-700/30 backdrop-blur-sm p-4 rounded-xl border border-primary-600/20">
+                        <div class="text-primary-50 font-semibold">Rating</div>
+                        <div class="text-sm text-primary-300">4.8 ★</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl h-96">
+                <div class="absolute inset-0 bg-gradient-to-t from-primary-900/70 via-primary-900/30 to-transparent z-10"></div>
+                <img src="http://static.photos/food/1024x576/5" alt="Interior de La Gran Pulpería" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 left-0 p-6 z-20">
+                    <h2 class="text-2xl font-display font-bold">Ambiente acogedor</h2>
+                    <p class="text-primary-200">Tradición y modernidad en el corazón de Madrid</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Specialties Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-display font-bold mb-6 text-center">Nuestras especialidades</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-primary-700/20 rounded-2xl overflow-hidden border border-primary-600/20 hover:border-primary-500/40 transition-all group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/food/640x360/1" alt="Cocido madrileño" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-display font-bold mb-2">Cocido madrileño</h3>
+                        <p class="text-primary-300 mb-4">La receta tradicional en tres vuelcos, como lo hacían las abuelas.</p>
+                        <div class="text-primary-100 font-semibold">€18.50</div>
+                    </div>
+                </div>
+                
+                <div class="bg-primary-700/20 rounded-2xl overflow-hidden border border-primary-600/20 hover:border-primary-500/40 transition-all group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/food/640x360/2" alt="Callos a la madrileña" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-display font-bold mb-2">Callos a la madrileña</h3>
+                        <p class="text-primary-300 mb-4">Preparados con nuestra receta secreta y morcilla de Burgos.</p>
+                        <div class="text-primary-100 font-semibold">€14.90</div>
+                    </div>
+                </div>
+                
+                <div class="bg-primary-700/20 rounded-2xl overflow-hidden border border-primary-600/20 hover:border-primary-500/40 transition-all group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/food/640x360/3" alt="Sopa de ajo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-display font-bold mb-2">Sopa de ajo</h3>
+                        <p class="text-primary-300 mb-4">Reconfortante, con huevo escalfado y jamón ibérico.</p>
+                        <div class="text-primary-100 font-semibold">€8.50</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Menu Section -->
+        <section class="mb-16" id="menu">
+            <h2 class="text-3xl font-display font-bold mb-6 text-center">Nuestra carta</h2>
+            
+            <div class="bg-primary-700/20 rounded-2xl p-6 border border-primary-600/20">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Starters -->
+                    <div>
+                        <h3 class="text-2xl font-display font-bold mb-4 pb-2 border-b border-primary-600/30">Entrantes</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="border-b border-primary-600/10 pb-4">
+                                <div class="flex justify-between items-start">
+                                    <h4 class="font-semibold">Ensalada de la casa</h4>
+                                    <span class="font-medium">€7.50</span>
+                                </div>
+                                <p class="text-sm text-primary-300">Lechuga, tomate, cebolla, atún y huevo</p>
+                            </div>
+                            
+                            <div class="border-b border-primary-600/10 pb-4">
+                                <div class="flex justify-between items-start">
+                                    <h4 class="font-semibold">Croquetas caseras</h4>
+                                    <span class="font-medium">€9.00</span>
+                                </div>
+                                <p class="text-sm text-primary-300">Jamón ibérico o bacalao (6 unidades)</p>
+                            </div>
+                            
+                            <div class="border-b border-primary-600/10 pb-4">
+                                <div class="flex justify-between items-start">
+                                    <h4 class="font-semibold">Pimientos de Padrón</h4>
+                                    <span class="font-medium">€8.50</span>
+                                </div>
+                                <p class="text-sm text-primary-300">Con sal gorda y aceite de oliva virgen extra</p>
+                            </div>
+                            
+                            <div class="border-b border-primary-600/10 pb-4">
+                                <div class="flex justify-between items-start">
+                                    <h4 class="font-semibold">Tabla de quesos españoles</h4>
+                                    <span class="font-medium">€12.50</span>
+                                </div>
+                                <p class="text-sm text-primary-300">Selección de 5 quesos con membrillo y nueces</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Main Courses -->
+                    <div>
+                        <h3 class="text-2xl font-display font-bold mb-4 pb-2 border-b border-primary-600/30">Platos principales</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="border-b border-primary-600/10 pb-4">
+                                <div class="flex justify-between items-start">
+                                    <h4 class="font-semibold">Carrillera al vino tinto</h4>
+                                    <span class="font-medium">€16.50</span>
+                                </div>
+                                <p class="text-sm text-primary-300">Estofada 8 horas con puré de patata trufado</p>
+                            </div>
+                            
+                            <div class="border-b border-primary-600/10 pb-4">
+                                <div class="flex justify-between items-start">
+                                    <h4 class="font-semibold">Rabo de toro</h4>
+                                    <span class="font-medium">€18.00</span>
+                                </div>
+                                <p class="text-sm text-primary-300">Guisado tradicional con patatas panaderas</p>
+                            </div>
+                            
+                            <div class="border-b border-primary-600/10 pb-4">
+                                <div class="flex justify-between items-start">
+                                    <h4 class="font-semibold">Bacalao a la riojana</h4>
+                                    <span class="font-medium">€17.50</span>
+                                </div>
+                                <p class="text-sm text-primary-300">Con pimiento rojo y cebolla caramelizada</p>
+                            </div>
+                            
+                            <div class="border-b border-primary-600/10 pb-4">
+                                <div class="flex justify-between items-start">
+                                    <h4 class="font-semibold">Entrecot de Ávila</h4>
+                                    <span class="font-medium">€22.00</span>
+                                </div>
+                                <p class="text-sm text-primary-300">400g con pimientos del piquillo y patatas bravas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <a href="#" class="inline-flex items-center gap-2 text-primary-300 hover:text-primary-100 transition-colors">
+                        <span>Ver carta completa</span>
+                        <i data-feather="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Reservation Form -->
+        <section class="mb-16 bg-primary-700/30 rounded-2xl p-8 border border-primary-600/20" id="reservas">
+            <h2 class="text-3xl font-display font-bold mb-6 text-center">Reserva tu mesa</h2>
+            
+            <form class="max-w-2xl mx-auto grid md:grid-cols-2 gap-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium mb-2">Nombre completo</label>
+                    <input type="text" id="name" class="w-full bg-primary-800/50 border border-primary-600/30 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent" placeholder="Tu nombre">
+                </div>
+                
+                <div>
+                    <label for="phone" class="block text-sm font-medium mb-2">Teléfono</label>
+                    <input type="tel" id="phone" class="w-full bg-primary-800/50 border border-primary-600/30 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent" placeholder="+34 123 456 789">
+                </div>
+                
+                <div>
+                    <label for="date" class="block text-sm font-medium mb-2">Fecha</label>
+                    <input type="date" id="date" class="w-full bg-primary-800/50 border border-primary-600/30 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                </div>
+                
+                <div>
+                    <label for="time" class="block text-sm font-medium mb-2">Hora</label>
+                    <input type="time" id="time" class="w-full bg-primary-800/50 border border-primary-600/30 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                </div>
+                
+                <div>
+                    <label for="people" class="block text-sm font-medium mb-2">Personas</label>
+                    <select id="people" class="w-full bg-primary-800/50 border border-primary-600/30 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                        <option value="1">1 persona</option>
+                        <option value="2">2 personas</option>
+                        <option value="3">3 personas</option>
+                        <option value="4">4 personas</option>
+                        <option value="5">5 personas</option>
+                        <option value="6">6 personas</option>
+                        <option value="7">7 personas</option>
+                        <option value="8+">8+ personas</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="comments" class="block text-sm font-medium mb-2">Comentarios</label>
+                    <textarea id="comments" rows="1" class="w-full bg-primary-800/50 border border-primary-600/30 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent" placeholder="Alergias, necesidades especiales..."></textarea>
+                </div>
+                
+                <div class="md:col-span-2">
+                    <button type="submit" class="w-full bg-primary-600 hover:bg-primary-500 text-white font-semibold py-3 px-6 rounded-xl transition-colors flex items-center justify-center gap-2">
+                        <i data-feather="calendar"></i> Reservar ahora
+                    </button>
+                </div>
+            </form>
+        </section>
+        
+        <!-- Testimonials -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-display font-bold mb-6 text-center">Lo que dicen nuestros clientes</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-primary-700/20 p-6 rounded-2xl border border-primary-600/20">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-full bg-primary-600 flex items-center justify-center text-primary-100 font-bold">JL</div>
+                        <div>
+                            <h4 class="font-semibold">Juan López</h4>
+                            <div class="flex items-center gap-1 text-sm text-yellow-400">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-primary-200">"El mejor cocido madrileño que he probado en mi vida. El servicio impecable y el ambiente muy acogedor. Volveré sin duda."</p>
+                </div>
+                
+                <div class="bg-primary-700/20 p-6 rounded-2xl border border-primary-600/20">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-full bg-primary-600 flex items-center justify-center text-primary-100 font-bold">MG</div>
+                        <div>
+                            <h4 class="font-semibold">María Gómez</h4>
+                            <div class="flex items-center gap-1 text-sm text-yellow-400">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-primary-200">"Las croquetas están para chuparse los dedos. El personal muy atento y el local tiene un encanto especial. Recomendado 100%."</p>
+                </div>
+                
+                <div class="bg-primary-700/20 p-6 rounded-2xl border border-primary-600/20">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-full bg-primary-600 flex items-center justify-center text-primary-100 font-bold">AP</div>
+                        <div>
+                            <h4 class="font-semibold">Ana Pérez</h4>
+                            <div class="flex items-center gap-1 text-sm text-yellow-400">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-primary-200">"Celebramos el cumpleaños de mi madre y fue una experiencia maravillosa. La carrillera estaba espectacular. Gracias por todo."</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Gallery -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-display font-bold mb-6 text-center">Nuestro espacio</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="aspect-square overflow-hidden rounded-xl hover:shadow-lg transition-shadow">
+                    <img src="http://static.photos/restaurant/640x360/1" alt="Interior restaurante" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="aspect-square overflow-hidden rounded-xl hover:shadow-lg transition-shadow">
+                    <img src="http://static.photos/restaurant/640x360/2" alt="Terraza" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="aspect-square overflow-hidden rounded-xl hover:shadow-lg transition-shadow">
+                    <img src="http://static.photos/restaurant/640x360/3" alt="Barra" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="aspect-square overflow-hidden rounded-xl hover:shadow-lg transition-shadow">
+                    <img src="http://static.photos/restaurant/640x360/4" alt="Sala privada" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Location -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-display font-bold mb-6 text-center">Dónde estamos</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-primary-700/20 p-6 rounded-2xl border border-primary-600/20">
+                    <h3 class="text-xl font-display font-bold mb-4">Información de contacto</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <i data-feather="map-pin" class="text-primary-400 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Dirección</h4>
+                                <p class="text-primary-300">Calle de la Victoria, 8, 28012 Madrid</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <i data-feather="phone" class="text-primary-400 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Teléfono</h4>
+                                <p class="text-primary-300">+34 91 123 45 67</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <i data-feather="mail" class="text-primary-400 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Email</h4>
+                                <p class="text-primary-300">info@granpulperia.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <i data-feather="clock" class="text-primary-400 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Horario</h4>
+                                <p class="text-primary-300">Lunes a domingo: 13:00-00:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="rounded-2xl overflow-hidden h-full min-h-[300px]">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.430391814169!2d-3.7037116233572236!3d40.41689697143857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287a8646f501%3A0x8751fc672fce730d!2sRestaurante%20La%20Mi%20Venta%2C%20Pl.%20de%20la%20Marina%20Espa%C3%B1ola%2C%207%2C%20Centro%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses!2ses!4v1712345678901!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <custom-footer></custom-footer>
+    
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/34123456789" class="fixed bottom-6 right-6 bg-green-600 text-white p-4 rounded-full shadow-xl hover:bg-green-500 transition-colors z-50" aria-label="Contactar por WhatsApp">
+        <i data-feather="message-circle"></i>
+    </a>
+    
+    <!-- Back to top -->
+    <button id="backToTop" class="fixed bottom-20 right-6 bg-primary-600 text-white p-3 rounded-full shadow-xl hover:bg-primary-500 transition-colors z-50 opacity-0 invisible" aria-label="Volver arriba">
+        <i data-feather="arrow-up"></i>
+    </button>
+    
+    <!-- Scripts -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+<script src=""></script>
+</body>
+</html>
